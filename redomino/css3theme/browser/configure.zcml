@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="redomino.css3theme">
+
+  <!-- 'css3theme' Zope 3 browser layer
+    Register views, viewlets and resources for this layer to make sure
+    they only apply to the 'css3theme' theme.
+    You can also use this layer to override default Plone browser views
+    and viewlets only within the 'css3theme' theme.
+  -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="css3theme"
+      />
+  
+  <!-- Resource directory for resources -->
+  <browser:resourceDirectory
+      name="redomino.css3theme.resources"
+      directory="resources"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+
+</configure>

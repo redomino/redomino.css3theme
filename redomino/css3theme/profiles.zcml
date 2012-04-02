@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="redomino.css3theme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="css3theme"
+      directory="profiles/default"
+      description='Extension profile for the "css3theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="redomino.css3theme.various"
+      title="css3theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="redomino.css3theme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
