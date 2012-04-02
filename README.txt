@@ -1,7 +1,7 @@
 Introduction
 ============
 
-This is a autoadaptative Plone Theme (based on sunburst)
+This is an autoadaptative Plone Theme (based on sunburst)
 
 Compatibility testing: desktop
 ------------------------------
@@ -14,8 +14,8 @@ Perfect:
 
 Almost perfect
 
-- IE 9 (some problem but amended (incompatibility between border-radius and gradients, lack of support of border-image) )
-- IE 7-8 (the same problems of IE9 plus lack of border radius support (amended) )
+- IE 9 (some problems but amended (incompatibility between border-radius and gradients, lack of support of border-image)
+- IE 7-8 (the same problems as for IE9 plus lack of border radius support (amended) )
 
 not supported: IE6 (not supported by Plone sunburst theme)
 
