@@ -51,6 +51,16 @@ div.overlay-iframe, div.overlay-ajax{
     margin-bottom:1em;
 }
 
+#mobile-globalnav{
+    display:None;
+}
+#mobile-globalnav select{
+    width:100%;
+    text-align: center;
+    font-size:20px;
+    padding: 6px 0;
+}
+
 #mobile-breadcrumbs select{
     padding: 8px 5px;
 }
@@ -205,6 +215,10 @@ div.overlay-iframe, div.overlay-ajax{
     /*style added in tinymce*/
     .hide_in_mobile {
         display:none;
+    }
+
+    #mobile-globalnav{
+        display:block;
     }
 
     #mobile-breadcrumbs{
