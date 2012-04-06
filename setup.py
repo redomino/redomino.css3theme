@@ -21,7 +21,7 @@ version = '1.3.dev0'
 
 setup(name='redomino.css3theme',
       version=version,
-      description="An installable theme for Plone 3",
+      description="An installable theme for Plone 4",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
