@@ -4,8 +4,17 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- updated the main_template to the latest version of sunburst theme() [sithmel]
+- moved the body classes generation in the plone_layout view [sithmel]
+- added a navigation root class in the body [sithmel]
+- removed the breadcrumbs in the navigation root [sithmel]
+- commented out the selection widget used for the breadcrumbs [sithmel]
+- added a new widget substituting the globalnav in the mobile version
+  when the number of items is  greater then 5 [sithmel]
+- update the modernizr version to 2.5.3 [sithmel]
+- added old IE classes in html [sithmel]
+- added style for html5 element [sithmel]
+- added an hack around tinymce IE9 bug https://dev.plone.org/ticket/11690 [sithmel]
 
 1.2 (2012-04-02)
 ----------------

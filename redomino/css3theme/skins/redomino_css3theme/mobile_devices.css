@@ -1,8 +1,14 @@
+/*html5 styles*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
 /*
 default style
 */
 html {
-	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none; /*for mobile*/
+	-ms-text-size-adjust: 100%; /*for web IE*/
 }
 /*portlet search*/
 .portletSearch .inputLabel{
@@ -35,8 +41,6 @@ div.overlay-iframe, div.overlay-ajax{
     .display: inline; /*fix IE7 */
 }
 
-
-
 /*mobile tabs*/
 
 #mobile_tabs{
@@ -53,6 +57,7 @@ div.overlay-iframe, div.overlay-ajax{
 
 #mobile-globalnav{
     display:None;
+    margin:10px 0;
 }
 #mobile-globalnav select{
     width:100%;
@@ -80,7 +85,7 @@ div.overlay-iframe, div.overlay-ajax{
 #mobile_tabs a {
 /*    text-indent:-9999px;*/
     display:block;
-    height:72px;
+    height:60px;
     background-repeat: no-repeat;
     background-color: #DDDDDD;
     background-position:center center;
@@ -103,15 +108,6 @@ div.overlay-iframe, div.overlay-ajax{
     margin-bottom: 10px;
 }
 
-/*
-.has-columns-one #mobile_tabs li, .has-columns-two #mobile_tabs li{
-    width:50%; 
-}
-
-.has-columns-one-two #mobile_tabs li{
-    width:33%; 
-}
-*/
 #mobile_tabs li{
     width:50%; 
 }
@@ -139,15 +135,6 @@ div.overlay-iframe, div.overlay-ajax{
     color:#DDDDDD;
 }
 
-/*#mobile_tabs .tab-portal-column-one a{*/
-/*    background-image: url('column_navigation.png');*/
-/*}*/
-
-/*#mobile_tabs .tab-portal-column-two a{*/
-/*    background-image: url('column_news.png');*/
-/*}*/
-
-/**/
 
 #visual-portal-wrapper {
 /*    width: 980px; */
@@ -216,7 +203,12 @@ div.overlay-iframe, div.overlay-ajax{
     .hide_in_mobile {
         display:none;
     }
-
+    #portal-globalnav.showMobile{
+        display:block;
+    }
+    #portal-globalnav{
+        display:none;
+    }
     #mobile-globalnav{
         display:block;
     }
@@ -224,15 +216,17 @@ div.overlay-iframe, div.overlay-ajax{
     #mobile-breadcrumbs{
         display:block;
     }
-    #portal-breadcrumbs{
+/*    #portal-breadcrumbs{*/
+/*        display:none;*/
+/*    }*/
+    #breadcrumbs-you-are-here{
+        display:none;
+    }
+    .navigation-root #portal-breadcrumbs{
         display:none;
     }
     body{
         font-size: 140%;
-    }
-
-    #portal-columns{
-/*        margin-top:15px;*/
     }
 
     #portal-globalnav li{

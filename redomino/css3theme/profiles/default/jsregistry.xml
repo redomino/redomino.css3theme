@@ -17,17 +17,12 @@
       See registerScript() arguments in ResourceRegistries/tools/JSRegistry.py
       for the latest list of all available keys and default values.
       -->
-<!--
- <javascript
-    id="++resource++redomino.css3theme.resources/modernizr-1.7.min.js"
-    cacheable="False" compression="safe" cookable="False"
-    enabled="True" expression=""  inline="False"/>
--->
 
  <javascript
-    id="++resource++redomino.css3theme.resources/modernizr-1.7.js"
-    cacheable="False" compression="safe" cookable="False"
+    id="++resource++redomino.css3theme.resources/modernizr.min.js"
+    cacheable="True" compression="False" cookable="False"
     enabled="True" expression=""  inline="False"/>
+
 
  <javascript
     id="++resource++redomino.css3theme.resources/tabbed_column.js"

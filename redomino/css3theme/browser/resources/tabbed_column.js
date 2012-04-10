@@ -71,14 +71,15 @@
 
     };
 
-    var max_global_nav = 3;
+    var max_global_nav = 6;
     var manage_globalnav = function (){
         var $portal_globalnav = $('#portal-globalnav')
         var $globalnavlinks = $portal_globalnav.children('li');
         if ($globalnavlinks.length < max_global_nav){
+            $portal_globalnav.addClass('showMobile');
             return;
         }
-        $portal_globalnav.addClass('hide_in_mobile');
+//        $portal_globalnav.addClass('hide_in_mobile');
         var $mobile_globalnav = $('<div />', {id: 'mobile-globalnav'}).insertAfter($portal_globalnav);
         var $select = $('<select />').appendTo($mobile_globalnav);
         $globalnavlinks.each(function (){
@@ -99,7 +100,7 @@
 
     $(document).ready(function (){
         manage_columns();
-        manage_breadcrumbs();
+//        manage_breadcrumbs();
         manage_globalnav();
     });
 

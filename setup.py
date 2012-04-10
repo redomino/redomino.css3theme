@@ -21,7 +21,7 @@ version = '1.3.dev0'
 
 setup(name='redomino.css3theme',
       version=version,
-      description="An installable theme for Plone 4",
+      description="A responsive (and mobile) theme for Plone 4 (based on sunburst)",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -31,10 +31,10 @@ setup(name='redomino.css3theme',
         "Programming Language :: Python",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         ],
-      keywords='Plone Theme',
+      keywords='Plone Theme responsive html5',
       author='Maurizio Lupo',
       author_email='maurizio.lupo@redomino.com',
-      url='http://pypi.python.org/pypi/redomino.css3theme',
+      url='https://github.com/redomino/redomino.css3theme',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['redomino'],
