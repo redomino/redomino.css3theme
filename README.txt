@@ -10,7 +10,7 @@ Compatibility testing: desktop
 
 Perfect:
 
-- firefox 3.6 - 11 
+- firefox 3.6 - 13a
 - chrome 18 
 - opera 11
 - IE 7-8-9 (degrades gracefully)
@@ -24,6 +24,8 @@ Perfect:
 
 - tablet android 2.2 (archos 70) portrait
 - tablet android 2.2 (archos 70) landscape
+- tablet android 4 (asus transformer) portrait
+- tablet android 4 (asus transformer) landscape
 - cell android 2.2 - 2.3 (htc desire hd, htc grafia) portrait
 - cell android 2.2 - 2.3 (htc desire hd, htc grafia) landscape
 - ipad2 landscape
