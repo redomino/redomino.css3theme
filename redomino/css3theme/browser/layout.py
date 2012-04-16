@@ -31,5 +31,11 @@ class LayoutPolicy(LayoutPolicyOriginal):
         
         if is_nav_root:
             body_class += ' navigation-root'
-        
+
+        portal_state = getMultiAdapter(
+            (context, self.request), name=u'plone_portal_state')
+
+        if portal_state.anonymous():
+            body_class += ' is-anonymous'
+
         return body_class

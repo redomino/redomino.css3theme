@@ -5,6 +5,7 @@ Changelog
 ----------------
 
 - fixed dependencies [sithmel]
+- added a class for anonymous users [sithmel]
 
 
 1.3 (2012-04-10)
