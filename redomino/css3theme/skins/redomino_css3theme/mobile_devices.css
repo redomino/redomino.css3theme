@@ -184,17 +184,20 @@ div.overlay-iframe, div.overlay-ajax{
         margin:0;
     }
 
-    #portlets-below .cell {
-        float: left;
-        margin: 0;
-        min-width: 300px;
+    #portlets-footer .cell, #portlets-below .cell,
+    #portlets-in-header .cell, #portlets-above .cell{
+        margin-left: 5px;
+        min-width: 215px;
         position: static;
     }
-
 
 }
 
 @media screen and (max-width: 650px) {
+    #portlets-footer .cell, #portlets-below .cell,
+    #portlets-in-header .cell, #portlets-above .cell{
+        width:98%;
+    }
     #mobile_tabs{
         display:block;
     }
