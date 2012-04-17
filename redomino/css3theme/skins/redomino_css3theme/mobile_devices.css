@@ -347,5 +347,23 @@ div.overlay-iframe, div.overlay-ajax{
 }
 
 
+@media screen and (max-width: 650px) {
+    #portal-languageselector {
+        float: left;
+        left: 0;
+        max-width: 100%;
+        padding: 3px 0;
+    }
 
+    #portal-personaltools-wrapper {
+        float: none;
+        text-align: right;
+        left: 0;
+        margin-left: 0;
+    }
+
+    #portal-personaltools {
+        padding: 3px 0;
+    }
+}
 
