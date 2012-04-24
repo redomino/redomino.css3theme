@@ -97,7 +97,7 @@ div.overlay-iframe, div.overlay-ajax{
 }
 
 
-#mobile_tabs a.current {
+#mobile_tabs .current  a{
     background-color: #205C90;
 }
 
@@ -131,7 +131,7 @@ div.overlay-iframe, div.overlay-ajax{
     
     font-size: 55px;
 }
-#mobile_tabs .tab-portal-columns-columns a.current{
+#mobile_tabs .tab-portal-columns-columns.current a{
     color:#DDDDDD;
 }
 

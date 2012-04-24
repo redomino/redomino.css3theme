@@ -31,25 +31,40 @@
     };
 
     var manage_columns = function (){
-        $('#portal-column-one, #portal-column-two').wrapAll('<div id="portal-columns-columns"/>')
         var $portal_columns = $('#portal-columns');
         var $columns = $portal_columns.children();
+
+        if ($columns.length < 2){
+            return;
+        }
+
         var $mobile_tabs = $('<ul />', {id : 'mobile_tabs'}).insertBefore($portal_columns);
         $mobile_tabs.addClass('row');
 
-        
-        $columns.each(function (){
-            var id = this.id;
-            $('<li class="tab-' + id + '"><a href="#"></a></li>').appendTo($mobile_tabs);
+        $('<li class="tab-portal-column-content current"><a href="#"></a></li>')
+        .appendTo($mobile_tabs)
+        .click(function (){
+            $(this).addClass('current').siblings().removeClass('current');
+
+            $('#portal-column-content').show();
+            $('#portal-column-one').hide();
+            $('#portal-column-two').hide();
+            return false;
         });
 
-        $mobile_tabs.tabs('#portal-columns > div');
+        $('<li class="tab-portal-columns-columns"><a href="#"></a></li>')
+        .appendTo($mobile_tabs)
+        .click(function (){
+            $(this).addClass('current').siblings().removeClass('current');
 
+            $('#portal-column-content').hide();
+            $('#portal-column-one').show();
+            $('#portal-column-two').show();
+            return false;
+        });
 
         var restore_tabs = function (){
-            var n = $mobile_tabs.find('a').filter('.current').parent().index();
-            $columns.hide();
-            $columns.eq(n).show();
+            $mobile_tabs.find('li.current').click();
         };
 
         var remove_tabs = function (){
