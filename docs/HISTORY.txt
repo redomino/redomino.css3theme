@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.4 (unreleased)
+1.4 (2012-04-24)
 ----------------
 
 - fixed dependencies [sithmel]
