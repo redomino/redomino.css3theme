@@ -6,6 +6,9 @@ audio:not([controls]) { display: none; }
 /*
 default style
 */
+#portal-searchbox #searchGadget {
+    -moz-appearance: none;
+}
 html {
 	-webkit-text-size-adjust: none; /*for mobile*/
 	-ms-text-size-adjust: 100%; /*for web IE*/

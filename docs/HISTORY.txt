@@ -4,7 +4,7 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- removed search style [sithmel]
 
 
 1.4 (2012-04-24)
