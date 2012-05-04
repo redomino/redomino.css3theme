@@ -3,6 +3,7 @@
  <layout>
   <styles>
    <element value="hide in mobile|span|hide_in_mobile"/>
+   <element value="columns|p|content-columns"/>
   </styles>
  </layout>
 </object>

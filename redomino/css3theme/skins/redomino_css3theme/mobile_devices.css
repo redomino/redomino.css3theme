@@ -370,3 +370,14 @@ div.overlay-iframe, div.overlay-ajax{
     }
 }
 
+
+.content-columns{
+   -moz-column-width: 340px;
+   -webkit-column-width: 340px;
+   column-width:340px;
+
+   -moz-column-gap: 40px;
+   -webkit-column-gap: 40px;
+   column-gap:40px;
+
+}

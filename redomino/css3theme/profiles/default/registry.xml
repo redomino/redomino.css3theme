@@ -6,6 +6,7 @@
             <description>Add this classes to the body of each page</description>
             <value_type type="plone.registry.field.TextLine" />
         </field>
+        <value purge="false" />
     </record>
-
+    
 </registry>
