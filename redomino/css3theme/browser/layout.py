@@ -1,7 +1,9 @@
 from plone.app.layout.globals.layout import LayoutPolicy as LayoutPolicyOriginal
 from plone.app.layout.navigation.interfaces import INavigationRoot
-from zope.component import getMultiAdapter
+from zope.component import getMultiAdapter, getUtility
 from Acquisition import aq_base, aq_inner, aq_parent
+from plone.registry.interfaces import IRegistry
+
 
 class LayoutPolicy(LayoutPolicyOriginal):
 
@@ -37,5 +39,11 @@ class LayoutPolicy(LayoutPolicyOriginal):
 
         if portal_state.anonymous():
             body_class += ' is-anonymous'
+
+        # add classes from the registry
+        registry = getUtility(IRegistry)
+        classes = registry['redomino.css3theme.classes']
+        if classes:
+            body_class += ' %s' % ' '.join(classes)
 
         return body_class

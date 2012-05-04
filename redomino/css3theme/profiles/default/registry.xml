@@ -1,0 +1,11 @@
+<registry>
+
+    <record name="redomino.css3theme.classes">
+        <field type="plone.registry.field.List">
+            <title>Classes</title>
+            <description>Add this classes to the body of each page</description>
+            <value_type type="plone.registry.field.TextLine" />
+        </field>
+    </record>
+
+</registry>

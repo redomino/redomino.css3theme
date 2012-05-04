@@ -5,7 +5,8 @@ Changelog
 ----------------
 
 - removed search style [sithmel]
-
+- added a registry (plone.app.registry) of the classes attached to the body 
+  (useful to customize the theme) [sithmel]
 
 1.4 (2012-04-24)
 ----------------
