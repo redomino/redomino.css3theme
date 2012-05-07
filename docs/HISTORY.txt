@@ -4,7 +4,8 @@ Changelog
 1.5.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fix the registry entry. It raised an exception
+  if the key is not in the registry [sithmel]
 
 
 1.5.1 (2012-05-04)

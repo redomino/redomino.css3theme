@@ -42,7 +42,7 @@ class LayoutPolicy(LayoutPolicyOriginal):
 
         # add classes from the registry
         registry = getUtility(IRegistry)
-        classes = registry['redomino.css3theme.classes']
+        classes = registry.get('redomino.css3theme.classes', [])
         if classes:
             body_class += ' %s' % ' '.join(classes)
 
