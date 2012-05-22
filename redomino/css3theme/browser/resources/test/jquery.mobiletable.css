@@ -1,0 +1,52 @@
+@media screen and (max-width: 980px) {
+    table.mobile-table,
+	.mobile-table thead,
+    .mobile-table tbody,
+    .mobile-table th, 
+    .mobile-table td, 
+    .mobile-table tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.mobile-table thead tr { 
+		position: absolute;
+		left: -100%;
+	}
+
+	/* Zebra striping */
+	.mobile-table tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+
+	.mobile-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	.mobile-table td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+    .mobile-table td:before{
+        content: attr(data-label);
+    }
+
+}
+
+
+
+
+	
+
+
