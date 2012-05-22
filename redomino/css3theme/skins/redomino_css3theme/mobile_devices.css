@@ -381,3 +381,47 @@ div.overlay-iframe, div.overlay-ajax{
    column-gap:40px;
 
 }
+
+
+/*mobiletables*/
+
+@media screen and (max-width: 650px) {
+    table.mobile-table,
+	.mobile-table thead,
+    .mobile-table tbody,
+    .mobile-table th, 
+    .mobile-table td, 
+    .mobile-table tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.mobile-table thead tr { 
+		position: absolute;
+		left: -100%;
+	}
+
+	/* Zebra striping */
+	.mobile-table tr:nth-of-type(odd) { 
+		background: #eee; 
+	}
+
+	.mobile-table td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+/*		position: relative;*/
+/*		padding-left: 50%;*/
+        text-align:center !important; 
+	}
+	
+	
+    .mobile-table td:before{
+        content: attr(data-label);
+        display: block;
+        font-size:80%;
+    }
+
+}
+
+

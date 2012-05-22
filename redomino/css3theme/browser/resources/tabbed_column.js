@@ -117,6 +117,9 @@
         manage_columns();
 //        manage_breadcrumbs();
         manage_globalnav();
+
+        $('table').mobiletable();
+
     });
 
 }(jQuery));
