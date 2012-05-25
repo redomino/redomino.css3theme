@@ -34,9 +34,9 @@
     cacheable="False" compression="safe" cookable="False"
     enabled="True" expression=""  inline="False"/>
 
- <javascript
-    id="++resource++redomino.css3theme.resources/jquery.mobiletable.js"
-    cacheable="False" compression="safe" cookable="False"
-    enabled="True" expression=""  inline="False"/>
+<!-- <javascript-->
+<!--    id="++resource++redomino.css3theme.resources/jquery.mobiletable.js"-->
+<!--    cacheable="False" compression="safe" cookable="False"-->
+<!--    enabled="True" expression=""  inline="False"/>-->
 
 </object>
