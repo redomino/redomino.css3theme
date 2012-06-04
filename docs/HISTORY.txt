@@ -6,7 +6,9 @@ Changelog
 
 - fix the registry entry. It raised an exception
   if the key is not in the registry [sithmel]
-
+- added useful classes for mobile and desktop only divs [sithmel]
+- enabled pinch to zoom for non apple device
+  (due to apple device viewport scaling bug) [sithmel]
 
 1.5.1 (2012-05-04)
 ------------------

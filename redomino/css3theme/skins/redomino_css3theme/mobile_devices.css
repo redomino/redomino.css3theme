@@ -13,6 +13,11 @@ html {
 	-webkit-text-size-adjust: none; /*for mobile*/
 	-ms-text-size-adjust: 100%; /*for web IE*/
 }
+/*word break*/
+h1, h2, h3, h4, h5, h6{
+    word-wrap: break-word;
+}
+
 /*portlet search*/
 .portletSearch .inputLabel{
     width:100%;
@@ -148,8 +153,24 @@ div.overlay-iframe, div.overlay-ajax{
     display:block;
 }
 
+.hide_width_gt_980px,
+.hide_width_gt_650px,
+.hide_in_desktop, /* alias of .hide_width_gt_650px */
+.hide_width_gt_480px{
+    display: none;
+}
 
 @media screen and (max-width: 980px) {
+
+    .hide_width_gt_980px{
+        display: block;
+    }
+
+    .hide_width_lt_980px {
+        display:none;
+    }
+
+
     #visual-portal-wrapper {
         width: auto !important; 
         margin: 0 auto;
@@ -197,6 +218,19 @@ div.overlay-iframe, div.overlay-ajax{
 }
 
 @media screen and (max-width: 650px) {
+
+    /*style added in tinymce*/
+    .hide_in_desktop,
+    .hide_width_gt_650px{ 
+        display: block;
+    }
+
+    /*style added in tinymce*/
+    .hide_width_lt_650px,
+    .hide_in_mobile {
+        display:none;
+    }
+
     #portlets-footer .cell, #portlets-below .cell,
     #portlets-in-header .cell, #portlets-above .cell{
         width:98%;
@@ -205,10 +239,6 @@ div.overlay-iframe, div.overlay-ajax{
         display:block;
     }
 
-    /*style added in tinymce*/
-    .hide_in_mobile {
-        display:none;
-    }
     #portal-globalnav.showMobile{
         display:block;
     }
@@ -313,6 +343,14 @@ div.overlay-iframe, div.overlay-ajax{
 }
 
 @media screen and (max-width: 480px) {
+    .hide_width_gt_480px{
+        display: block;
+    }
+
+    .hide_width_lt_480px {
+        display:none;
+    }
+
     body{
         font-size: 130%;
     }

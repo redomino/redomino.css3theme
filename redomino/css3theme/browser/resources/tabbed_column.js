@@ -118,8 +118,26 @@
 //        manage_breadcrumbs();
         manage_globalnav();
 
-        $('table').mobiletable();
+//        $('table').mobiletable();
 
     });
 
 }(jQuery));
+
+
+(function() {
+    var mobile_timer, viewport;
+
+if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+    viewport = document.querySelector('meta[name="viewport"]');
+    viewport.setAttribute('content','width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0');
+
+// doesn't work smoothly
+//    window.addEventListener('gesturestart', function () {
+//        viewport.setAttribute('content','width=device-width,minimum-scale=0.4,maximum-scale=1.6');
+//    },false);
+
+}
+
+}());
+

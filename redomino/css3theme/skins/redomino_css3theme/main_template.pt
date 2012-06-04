@@ -39,8 +39,9 @@
     <tal:notajax tal:condition="python:not ajax_load or ajax_include_head">
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />-->
+        <!-- android phones only ()-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.6, minimun-scale=0.4">
 
         <!-- For iPhone 4 with high-resolution Retina display: -->
         <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-high.png" 

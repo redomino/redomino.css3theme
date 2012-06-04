@@ -2,7 +2,8 @@
 <object>
  <layout>
   <styles>
-   <element value="hide in mobile|span|hide_in_mobile"/>
+   <element value="Mobile only|div|hide_in_desktop"/>
+   <element value="Desktop only|div|hide_in_mobile"/>
    <element value="columns|p|content-columns"/>
   </styles>
  </layout>
