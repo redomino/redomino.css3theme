@@ -5,6 +5,7 @@ Changelog
 ------------------
 
 - added new a class lt-ie10 [sithmel, adeste]
+- fix viewport tag [sithmel]
 
 
 1.5.2 (2012-06-04)
