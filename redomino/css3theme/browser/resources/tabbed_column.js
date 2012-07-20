@@ -139,5 +139,8 @@ if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) 
 
 }
 
+
+
+
 }());
 

@@ -31,4 +31,12 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:page
+      name="userbodyclasses"
+      for="*"
+      permission="zope.Public"
+      class=".userbodyclass.UserBodyClasses"
+      layer=".interfaces.IThemeSpecific"
+      />
+
 </configure>

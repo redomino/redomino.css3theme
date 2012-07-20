@@ -3,7 +3,7 @@ from plone.app.layout.navigation.interfaces import INavigationRoot
 from zope.component import getMultiAdapter, getUtility
 from Acquisition import aq_base, aq_inner, aq_parent
 from plone.registry.interfaces import IRegistry
-
+from utility import str2set
 
 class LayoutPolicy(LayoutPolicyOriginal):
 
@@ -41,9 +41,22 @@ class LayoutPolicy(LayoutPolicyOriginal):
             body_class += ' is-anonymous'
 
         # add classes from the registry
+        # we have global classes (redomino.css3theme.classes)
+        # and user defined classes (cookies)
         registry = getUtility(IRegistry)
-        classes = registry.get('redomino.css3theme.classes', [])
+
+        classes = set(registry.get('redomino.css3theme.classes', []))
+
+        userclasses = str2set(self.request.cookies.get('redomino.css3theme.userclasses', None))
+
+        useraddableclasses = set(registry.get('redomino.css3theme.useraddableclasses', []))
+
+        userclasses = userclasses & useraddableclasses
+
+        classes = classes | userclasses
+
         if classes:
             body_class += ' %s' % ' '.join(classes)
+
 
         return body_class

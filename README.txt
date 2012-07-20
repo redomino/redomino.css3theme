@@ -41,7 +41,16 @@ Useful stuff
     - navigation-root (detect if a page is the navigation root)
     - user defined classes (you can add these classes on every page
       using the plone registry - redomino.css3theme.classes)
+    - user defined body classes: the user can attach classes to the body using a 
+      cookie. Valid classes are the ones in the plone registry entry:
+      redomino.css3theme.useraddableclasses. The user can add, remove classes
+      using the "@@userbodyclasses" view (add, remove, toggle, reset).
+      examples:
 
+          - @@userbodyclasses?add=class1,class2 add those classes
+          - @@userbodyclasses?remove=class1,class2 remove those classes
+          - @@userbodyclasses?toggle=class1,class2 toggle those classes
+          - @@userbodyclasses?reset= remove all classes
 
 Compatibility testing: desktop
 ------------------------------
