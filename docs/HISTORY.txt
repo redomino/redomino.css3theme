@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5.4 (unreleased)
+1.5.4 (2012-07-23)
 ------------------
 
 - fix wrong import in userbodyclasses view [sithmel]
