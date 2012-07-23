@@ -95,4 +95,49 @@ Not yet tested:
 - blackberry os 5
 - windowsphone7
 
+How to build a theme based on redomino.css3theme
+------------------------------------------------
+1 - add the dependency on your setup.py (I suggest to pin the version)::
+
+    install_requires=[
+         'setuptools',
+         'redomino.css3theme==1.5.4',  
+
+2 - your layer interface must inherit from the one of css3theme::
+
+    from redomino.css3theme.browser.interfaces import IThemeSpecific as ICss3theme
+    class IThemeSpecific(ICss3theme):
+       """ """
+
+3 - your skin layer must inherit from css3theme (profiles/default/skins.xml)::
+
+    ...
+     <skin-path name="My theme" based-on="css3theme">
+      <layer name="my_theme"
+         insert-after="custom"/>
+     </skin-path>
+    ...
+
+4 - viewlets configuration must inherit from css3theme (profiles/default/viewlets.xml)::
+
+    ...
+     <order manager="plone.portalfooter" skinname="My theme"
+           based-on="css3theme">
+     </order>
+    ...
+     <hidden manager="plone.portalheader" skinname="My theme"
+            based-on="css3theme">
+     </hidden>
+    ...
+
+5 - css3theme must be installed while you install your theme (profiles/default/metadata.xml)::
+
+    <?xml version="1.0"?>
+    <metadata>
+      <version>1000</version>
+        <dependencies>
+            <dependency>profile-redomino.css3theme:default</dependency>
+        </dependencies>
+    </metadata>
+
 

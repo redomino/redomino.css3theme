@@ -15,7 +15,6 @@
 
 from Products.Five.browser import BrowserView
 from zope.component import getUtilitiesFor, getUtility
-from ploomcake.theme.themeoptions.interfaces import IThemeOption
 from plone.registry.interfaces import IRegistry
 
 from utility import str2set, set2str
