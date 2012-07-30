@@ -101,7 +101,7 @@ How to build a theme based on redomino.css3theme
 
     install_requires=[
          'setuptools',
-         'redomino.css3theme==1.5.4',  
+         'redomino.css3theme==1.5.5',  
 
 2 - your layer interface must inherit from the one of css3theme::
 

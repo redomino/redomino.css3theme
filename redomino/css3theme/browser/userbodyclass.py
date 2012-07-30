@@ -53,7 +53,18 @@ class UserBodyClasses(BrowserView):
             classes = classes & useraddableclasses
             locals()['%sfunc' % func](userclasses, classes)
 
-        self.request.response.setCookie('redomino.css3theme.userclasses', set2str(userclasses))
+        if userclasses:
+            self.request.response.setCookie('redomino.css3theme.userclasses', set2str(userclasses), path="/")
+        else:
+#            import time
+#            from email.Utils import formatdate
+#            expiration_seconds = time.time()# + (5*60*60) # 5 hours from now
+#            expires = formatdate(expiration_seconds, usegmt=True) 
+
+#            self.request.response.setCookie('redomino.css3theme.userclasses', '', expires=expires)
+#            self.request.response.setCookie('redomino.css3theme.userclasses', None,  path = '/', max_age = 0)
+            self.request.response.setCookie('redomino.css3theme.userclasses', "None", path="/")
+#            self.request.response.expireCookie('redomino.css3theme.userclasses') 
 
 
     def __call__(self):

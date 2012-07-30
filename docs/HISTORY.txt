@@ -4,7 +4,7 @@ Changelog
 1.5.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fixed cookies in userbodyclass view. It doesn't work in IE [sithmel]
 
 
 1.5.4 (2012-07-23)
