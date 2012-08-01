@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5.7 (unreleased)
+1.5.7 (2012-08-01)
 ------------------
 
 - added scrollTop.js in jsregistry.xml
