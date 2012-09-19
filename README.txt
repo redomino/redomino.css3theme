@@ -5,6 +5,13 @@ A responsive Plone Theme (based on sunburst).
 
 CSS3theme is a resposive (or  autoadaptative, as you prefer) theme for Plone 4 that automatically adapts to the display of the device you're using to surf the Web. This  means that, with CSS3theme, you have one single theme that works for every mobile device available in the market.
 
+Screenshot:
+
+.. figure:: https://github.com/redomino/redomino.css3theme/raw/master/docs/resources/css3theme.jpg 
+   :align:   center
+
+   mobile view
+
 Useful stuff
 ============
 
