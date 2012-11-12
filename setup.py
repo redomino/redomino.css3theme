@@ -17,7 +17,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.5.9'
+version = '1.5.10.dev0'
 
 setup(name='redomino.css3theme',
       version=version,
