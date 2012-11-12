@@ -1,0 +1,48 @@
+/*
+designed for: screen and (max-width: 480px)
+*/
+.hide_width_gt_480px{
+    display: block;
+}
+
+.hide_width_lt_480px {
+    display:none;
+}
+
+body{
+    font-size: 130%;
+}
+#edit-bar{
+    font-size: 50%;
+}
+#portal-personaltools{
+    font-size: 74%;
+}
+#portal-top{
+    font-size: 110%;
+
+}
+/*both the columns*/
+.has-columns-one-two #portal-column-content{
+    margin-left: -98.875%;
+    width: 97.75%;
+    clear:both;
+}
+.has-columns-one-two #portal-column-one{
+    margin-left: -98.875%;
+    clear:both;
+    width: 97.75%;
+}
+.has-columns-one-two #portal-column-two{
+    margin-left: -98.875%;
+    clear:both;
+    width: 97.75%;
+}
+
+#portal-logo {
+    background-position:left top;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+/*
+designed for: screen and (max-width: 980px)
+*/
+
+.hide_width_gt_980px{
+    display: block;
+}
+
+.hide_width_lt_980px {
+    display:none;
+}
+
+
+#visual-portal-wrapper {
+    width: auto !important; 
+    margin: 0 auto;
+} 
+
+/*without column*/
+.has-no-columns #portal-column-content{
+}
+/*only the left column*/
+.has-columns-one #portal-column-content{
+}
+.has-columns-one #portal-column-one{
+}
+/*only the right column*/
+.has-columns-two #portal-column-content{
+}
+.has-columns-two #portal-column-two{
+}
+/*both the columns*/
+.has-columns-one-two #portal-column-content{
+    width: 72.75%;
+}
+.has-columns-one-two #portal-column-one{
+}
+.has-columns-one-two #portal-column-two{
+    margin-left: -98.875%;
+    clear:left;
+    width: 97.75%;
+}
+
+#portal-logo {
+    text-indent: -9999em;
+    width: 100%;
+    background: url('logo-mobile.png') top center no-repeat transparent;
+    margin:0;
+}
+
+#portlets-footer .cell, #portlets-below .cell,
+#portlets-in-header .cell, #portlets-above .cell{
+    margin-left: 5px;
+    min-width: 215px;
+    position: static;
+}
+
+

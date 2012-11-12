@@ -1,0 +1,228 @@
+/*html5 styles*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*
+default style
+*/
+#portal-searchbox #searchGadget {
+    -moz-appearance: none;
+}
+html {
+	-webkit-text-size-adjust: none; /*for mobile*/
+	-ms-text-size-adjust: 100%; /*for web IE*/
+}
+/*word break*/
+h1, h2, h3, h4, h5, h6{
+    word-wrap: break-word;
+}
+
+/*portlet search*/
+.portletSearch .inputLabel{
+    width:100%;
+}
+.portletSearch .LSBox .searchButton{
+    float:right;
+}
+.LSRow, #LSNothingFound{
+    width:auto;
+}
+.portletSearch .LSResult{
+    clear:both;
+}
+/*fix overlays*/
+div.overlay-iframe, div.overlay-ajax{
+    width:auto;
+}
+/*advanced search*/
+.template-search_form #SearchableText{
+    width:100%;
+}
+.template-search_form .formControls{
+    text-align:right;
+}
+
+/*fix for webkit*/
+#portal-globalnav li {
+    display: inline-block;
+    .display: inline; /*fix IE7 */
+}
+
+/*mobile tabs*/
+
+#mobile_tabs{
+    width:97.75%;
+    margin:auto;
+    display:none;
+}
+#mobile-breadcrumbs{
+    display:none;
+    font-size :70%;
+    text-align: center;
+    margin-bottom:1em;
+}
+
+#mobile-globalnav{
+    display:None;
+    margin:10px 0;
+}
+#mobile-globalnav select{
+    width:100%;
+    text-align: center;
+    font-size:20px;
+    padding: 6px 0;
+}
+
+#mobile-breadcrumbs select{
+    padding: 8px 5px;
+}
+.tab-portal-column-content a{
+    border-radius:10px 0  0 10px;
+    -webkit-border-radius:10px 0  0 10px;
+    -moz-border-radius:10px 0  0 10px;
+
+}
+.tab-portal-columns-columns a{
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    -moz-border-radius:0 10px 10px 0;
+}
+
+
+#mobile_tabs a {
+/*    text-indent:-9999px;*/
+    display:block;
+    height:60px;
+    background-repeat: no-repeat;
+    background-color: #DDDDDD;
+    background-position:center center;
+
+    -moz-box-shadow: 1px 1px 3px #333333;
+    -webkit-box-shadow: 1px 1px 3px #333333;
+    box-shadow: 1px 1px 3px #333333;
+
+}
+
+
+#mobile_tabs .current  a{
+    background-color: #205C90;
+}
+
+
+#mobile_tabs li{
+    display:block;
+    float:left;
+    margin-bottom: 10px;
+}
+
+#mobile_tabs li{
+    width:50%; 
+}
+
+.has-no-columns #mobile_tabs{
+    display:none;
+}
+
+#mobile_tabs .tab-portal-column-content a{
+    background-image: url('column_content.png');
+}
+#mobile_tabs .tab-portal-columns-columns a{
+/*    background-image: url('column_content.png');*/
+}
+#mobile_tabs .tab-portal-columns-columns{
+    text-align:center;
+}
+#mobile_tabs .tab-portal-columns-columns a:after{
+    content:"...";
+/*    content:"&#8729;";*/
+    
+    font-size: 55px;
+}
+#mobile_tabs .tab-portal-columns-columns.current a{
+    color:#DDDDDD;
+}
+
+
+#visual-portal-wrapper {
+/*    width: 980px; */
+    margin: 0 auto;
+} 
+
+#portal-logo{
+    display:block;
+}
+
+.hide_width_gt_980px,
+.hide_width_gt_650px,
+.hide_in_desktop, /* alias of .hide_width_gt_650px */
+.hide_width_gt_480px{
+    display: none;
+}
+
+
+
+.content-columns{
+   -moz-column-width: 340px;
+   -webkit-column-width: 340px;
+   column-width:340px;
+
+   -moz-column-gap: 40px;
+   -webkit-column-gap: 40px;
+   column-gap:40px;
+
+}
+
+/*-BACK TO TOP BUTTON-*/
+
+#backTop {
+	position: fixed;
+	bottom: 30px;
+        right: 30px;
+}
+
+#backTop a {
+	width: 64px;
+	display: block;
+	text-align: center;
+	font: 130px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+        overflow: hidden;
+        line-height: 110px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#backTop a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#backTop span {
+	width: 64px;
+	height: 60px;
+	display: block;
+	background: rgba(221,221,221,0.8);
+
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#backTop span:before {
+    content: '↑';
+}
+#backTop a:hover span {
+	background-color: #777;
+}

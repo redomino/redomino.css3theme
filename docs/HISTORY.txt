@@ -4,7 +4,8 @@ Changelog
 1.5.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- from now the css is splitted by media query.
+  This allows to fine tune mobile customizations [sithmel]
 
 
 1.5.8 (2012-09-19)
