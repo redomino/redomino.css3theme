@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5.9 (unreleased)
+1.5.9 (2012-11-12)
 ------------------
 
 - from now the css is splitted by media query.
