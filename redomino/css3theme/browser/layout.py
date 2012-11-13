@@ -59,4 +59,10 @@ class LayoutPolicy(LayoutPolicyOriginal):
             body_class += ' %s' % ' '.join(classes)
 
 
+        # add contextual classes
+        contextual_classes = context.css3theme_get_contextual_classes()
+
+        if contextual_classes:
+            body_class += " %s" % contextual_classes
+
         return body_class

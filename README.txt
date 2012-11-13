@@ -28,6 +28,7 @@ Useful stuff
     - added "decomment" and "doWhenVisible". Two useful jquery plugins.
       They permit to decomment portions of html and run javascript code based
       on the screen size
+    - scrollTop: a button that helps to scroll on mobile
 
 - Tinymce mobile integration
 
@@ -46,6 +47,9 @@ Useful stuff
       (detect the number of columns)
     - is-anonymous (detect whether a user is anonymous)
     - navigation-root (detect if a page is the navigation root)
+    - contextual classes: customize the python script
+      css3theme_get_contextual_classes (skin layer) to add custom contextual
+      classes
     - user defined classes (you can add these classes on every page
       using the plone registry - redomino.css3theme.classes)
     - user defined body classes: the user can attach classes to the body using a 

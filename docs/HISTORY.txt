@@ -4,7 +4,7 @@ Changelog
 1.5.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- from now It's possible to inject classes in the body using a script [sithmel]
 
 
 1.5.9 (2012-11-12)
