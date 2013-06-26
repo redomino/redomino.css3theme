@@ -33,33 +33,33 @@
     media="" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     insert-after="css3theme_maxwidth650.css"
-    enabled="1" expression=""/>
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
  <stylesheet title=""
     id="css3theme_all.css"
     media="all" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
-    enabled="1" expression=""/>
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
  <stylesheet title=""
     id="css3theme_maxwidth980.css"
     media="screen and (max-width: 980px)" rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     insert-after="css3theme_all.css"
-    enabled="1" expression=""/>
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
  <stylesheet title=""
     id="css3theme_maxwidth650.css"
     media="screen and (max-width: 650px) " rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     insert-after="css3theme_maxwidth980.css"
-    enabled="1" expression=""/>
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
  <stylesheet title=""
     id="css3theme_maxwidth480.css"
     media="screen and (max-width: 480px) " rel="stylesheet" rendering="import"
     cacheable="True" compression="safe" cookable="True"
     insert-after="css3theme_maxwidth650.css"
-    enabled="1" expression=""/>
+    enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
 
 </object>

@@ -21,13 +21,13 @@
  <javascript
     id="++resource++redomino.css3theme.resources/modernizr.min.js"
     cacheable="True" compression="False" cookable="False"
-    enabled="True" expression=""  inline="False"/>
+    enabled="False" expression=""  inline="False"/>
 
 
  <javascript
     id="++resource++redomino.css3theme.resources/tabbed_column.js"
     cacheable="False" compression="safe" cookable="False"
-    enabled="True" expression=""  inline="False"/>
+    enabled="True" expression="not: request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
 
  <javascript
     id="++resource++redomino.css3theme.resources/jquery.decomment.js"
@@ -37,7 +37,7 @@
  <javascript
     id="++resource++redomino.css3theme.resources/scrollTop.js"
     cacheable="False" compression="safe" cookable="False"
-    enabled="True" expression=""  inline="False"/>
+    enabled="True" expression="not: request/HTTP_X_THEME_ENABLED | nothing"  inline="False"/>
 
 
 <!-- <javascript-->

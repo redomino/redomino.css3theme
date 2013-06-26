@@ -4,7 +4,8 @@ Changelog
 1.5.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- modernizr is disabled by default (plone 4.3) [sithmel]
+- removed js and css when diazo is enabled [sithmel]
 
 
 1.5.10 (2012-11-13)
